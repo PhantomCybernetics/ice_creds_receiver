@@ -1,2 +1,3 @@
-# ice_creds_receiver
-Receives and stores credentials used by the coturn server
+# TURN/STUN Credentials Receiver
+
+Receives and stores credentials sent from the Cloud Bridge used by the Coturn server 
