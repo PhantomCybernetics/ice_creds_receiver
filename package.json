@@ -1,0 +1,27 @@
+{
+  "name": "ice_creds_receiver",
+  "version": "1.0.0",
+  "description": "Receives and stores credentials sent from the Cloud Bridge used by the Coturn server",
+  "main": "credentials-receiver.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhantomCybernetics/ice_creds_receiver.git"
+  },
+  "author": "Mirek Burkon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PhantomCybernetics/ice_creds_receiver/issues"
+  },
+  "homepage": "https://github.com/PhantomCybernetics/ice_creds_receiver#readme",
+  "dependencies": {
+    "comment-json": "^4.2.5",
+    "express": "^4.21.2",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "sqlite3": "^5.1.7"
+  }
+}
