@@ -2,10 +2,12 @@
   "name": "ice_creds_receiver",
   "version": "1.0.0",
   "description": "Receives and stores credentials sent from the Cloud Bridge used by the Coturn server",
-  "main": "credentials-receiver.js",
+  "packageManager": "bun@1.2.10",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "bun credentials-receiver.ts",
+    "typecheck": "tsc",
+    "dev": "NODE_ENV=development bun --watch credentials-receiver.ts"
   },
   "repository": {
     "type": "git",
@@ -19,9 +21,12 @@
   "homepage": "https://github.com/PhantomCybernetics/ice_creds_receiver#readme",
   "dependencies": {
     "comment-json": "^4.2.5",
-    "express": "^4.21.2",
-    "fs": "^0.0.1-security",
-    "path": "^0.12.7",
-    "sqlite3": "^5.1.7"
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.18",
+    "@types/express": "^5.0.3",
+    "prettier": "^3.6.2",
+    "typescript": "^5.8.3"
   }
 }
