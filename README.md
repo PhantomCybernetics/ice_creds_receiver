@@ -20,7 +20,7 @@ bun install
 
 ### Create config
 
-Create ice_creds_receiver/config.json and paste:
+Create ice_creds_receiver/config.jsonc and paste:
 
 ```jsonc
 {
@@ -51,7 +51,7 @@ Description=phntm ice_creds_receiver service
 After=network.target
 
 [Service]
-ExecStart=/home/ubuntu/ice_creds_receiver/run.sh
+ExecStart=/home/ubuntu/.bun/bin/bun ./credentials-receiver.ts
 Restart=always
 User=root
 Environment=NODE_ENV=production
